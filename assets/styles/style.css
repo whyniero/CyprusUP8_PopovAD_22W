@@ -1,6 +1,8 @@
 :root {
     --clr-orange: #f87932;
     --clr-turquoise: #39BFA7;
+    --gap: 20px;
+    --wandh-img: 250px;
 }
 
 p,
@@ -19,7 +21,7 @@ p {
 
 h1,
 h2,
-h3 {
+h3{
     font-family: 'Merriweather';
     font-weight: 600;
     color: #ffffff;
@@ -47,6 +49,7 @@ h3 {
     font-weight: 600;
     padding: 12px 20px;
     margin-top: 100px;
+    cursor: pointer;
 }
 
 .orng-btn {
@@ -153,9 +156,9 @@ h3 {
 
 .main {
     background-image: url(../imgs/BG.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 121vh;
+    height: 1100px;
 }
 
 .main .container {
@@ -241,6 +244,7 @@ h3 {
 
 .romb-inner-2{
     transform: rotate(-45deg) scale(1.5);
+    margin-top: -80px;
     transition: 1s;
 }
 
@@ -287,13 +291,13 @@ h3 {
 
 .route-img {
     position: absolute;
-    top: -4%;
-    left: -10%;
+    top: -8%;
+    left: -14%;
     width: 60%;
     height: 100%;
     background-image: url('../imgs/Route.svg');
-    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     z-index: -1;
 }
 
@@ -302,11 +306,27 @@ h3 {
     z-index: 1;
 }
 
+.adventure .trn-btn{
+    margin-top: 150px;
+}
+
+.two-rombs{
+    margin-top: 100px;
+    width: 100%;
+}
+
 .enough{
-    background-image: url(../imgs/bg-play.png);
-    background-size: 100%;
+    background-image: url(../imgs/video.gif);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 1080px;
+    position: relative;
+}
+
+.cutter{
+    position: absolute;
+    width: 100%;
+    top: -160px;
 }
 
 .enough .container{
@@ -319,42 +339,302 @@ h3 {
     margin-bottom: 210px;
 }
 
-/* .romb-b{
-    width: 180px;
-    height: 180px;
-    transform: rotate(45deg);
-    border: solid 10px var(--clr-turquoise);
-    border-radius: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    padding-right: 4.5%;
-    box-shadow: inset 0 0 8px 1px rgba(0, 0, 0, 0.3);
+
+.romb-2{
+    width: 28%;
 }
 
-.romb-b-small{
-    margin-top: 14%;
-    width: 55px;
-    height: 55px;
-    background-color: var(--clr-turquoise);
-    border: solid 4px #2A0606;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: inset 0 0 8px 1px rgba(0, 0, 0, 0.3);
+/* КОНЕЦ СЕКЦИИ enough */
+
+.news{
+    margin-top: 200px;
 }
 
-.romb-b p{
-    transform: rotate(-45deg);
-    font-size: 1.3rem;
-    font-weight: 600;
+.news h3{
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: black;
+    font-size: 2.8rem;
 }
 
-.in-romb-b{
-    transform: rotate(-45deg);
+.news h4{
+    font-size: 2rem;
+    color: #444444;
+}
+
+.news p{
+    color: #666666;
     font-size: 1rem;
-    color: #ffffff;
+}
 
-} */
+.photo-grid{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--gap);
+}
+
+.img{
+  background-size: cover;
+  height: var(--wandh-img);
+  width: var(--wandh-img);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.img-1{
+    background-image: url(../imgs/grid1.png);
+    background-position: center;
+    height: calc(var(--wandh-img)*2+var(--gap));
+}
+.img-2{
+    background-image: url(../imgs/grid2.png);
+}
+.img-3{
+    background-image: url(../imgs/grid3.png);
+}
+.img-4{
+    background-image: url(../imgs/grid4.png);
+    width: calc(var(--wandh-img)*2+var(--gap));
+}
+.img-5{
+    background-image: url(../imgs/grid5.png);
+}
+.img-6{
+    background-image: url(../imgs/grid6.png);
+}
+
+.img-1{
+    grid-row: 1 / 3;    
+}
+
+.img-4{
+    grid-row: 1;
+    grid-column: 3 / 5;
+}
+
+.gradient-hov-img{
+    background: linear-gradient(to top, black,rgba(0, 0, 0, 0));
+    position: absolute;
+    width: 100%;
+    bottom: -100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 20px;
+    transition: .4s;
+}
+
+.img:hover .gradient-hov-img{
+    bottom: 0px;
+    transition: 0.8s;
+}
+.strelka{
+    width: 40px;
+}
+
+.text-hov-img{
+    font-family: 'Merriweather';
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1.6rem;
+    letter-spacing: 0;
+}
+
+.news .trn-btn{
+    margin-top: 60px;
+}
+
+.trip{
+    margin-top: 100px;
+    background-image: url(../imgs/bg-3.jfif);
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.trip h2, .num{
+    text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.4);;
+}
+
+.trip .container{
+    padding: 80px 10%;
+    border: solid 5px white;
+}
+
+.trip p{
+    color: #ffffff;
+}
+
+
+.title, .num, .month{
+    font-family: 'Sedgwick Ave';
+    color: #ffffff;
+}
+
+.title{
+    color: var(--clr-turquoise);
+    font-size: 3.5rem;
+}
+
+.block-with-text{
+    margin-bottom: 60px;
+}
+
+.block-grid{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 40px 40px;
+}
+
+.num{
+    font-size: 4.5rem;
+    font-weight: 400;
+    margin-right: 25px;
+    grid-row: 1/3;
+}
+
+.month{
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #969696;
+}
+
+.text-block{
+    padding: 0;
+    margin-top: -10px;
+    font-family: 'Merriweather';
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 2.3rem;
+}
+
+.trip .orng-btn{
+    margin-top: 50px;
+}
+
+@media (max-width: 1400px){
+    .romb{
+        width: 320px;
+        height: 320px;
+    }
+    
+    .small-romb{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .sr-1, .sr-5{
+        width: 160px;
+        height: 160px;
+    }
+    
+    .sr-3{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .sr-1{
+        top: -10%;
+        left: 58%;
+    }
+    
+    .sr-2{
+        top: 42%;
+        left: 70%;
+    }
+    
+    .sr-3{
+        top: 68%;
+        left: 50%;
+    }
+    
+    .sr-4{
+        top: 98%;
+        left: 32%;
+    }
+    
+    .sr-5{
+        top: 86%;
+        left: -8%;
+    }
+
+    .cutter{
+        top: -118px;
+    }
+}
+
+@media (max-width: 1200px) {
+    :root{
+        --wandh-img: 200px;
+    }
+
+    html{
+        font-size: 13px;
+    }
+
+    .main {
+        height: 1000px;
+    }
+
+
+    .romb{
+        width: 280px;
+        height: 280px;
+    }
+    
+    .small-romb{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .sr-1, .sr-5{
+        width: 140px;
+        height: 140px;
+    }
+    
+    .sr-3{
+        width: 130px;
+        height: 130px;
+    }
+    
+    .sr-1{
+        top: -12%;
+        left: 58%;
+    }
+    
+    .sr-2{
+        top: 42%;
+        left: 70%;
+    }
+    
+    .sr-3{
+        top: 68%;
+        left: 50%;
+    }
+    
+    .sr-4{
+        top: 96%;
+        left: 32%;
+    }
+    
+    .sr-5{
+        top: 84%;
+        left: -8%;
+    }
+
+    .cutter{
+        top: -118px;
+    }    
+    
+}
+
+@media (max-width: 992px){
+
+}
+
+
+
+/* НЕ ЗАБУДЬ ВСТАВИТЬ ССЫЛКУ НА МОНТСЕРРАТ ШРИФТ */

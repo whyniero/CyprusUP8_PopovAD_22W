@@ -23,6 +23,11 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sedgwick+Ave&display=swap"
     rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
@@ -36,7 +41,7 @@
         </a>
         <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-          <img src="./assets/imgs/hamburger.svg" alt="">
+          <img class="logo-img" src="./assets/imgs/hamburger.svg" alt="">
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
@@ -66,12 +71,12 @@
         </div>
       </div>
     </nav>
-    <div class="container d-flex mt-5">
-      <div class="col-6">
+    <div class="container d-flex flex-column flex-md-row mt-5">
+      <div class="col-12 col-md-6">
         <h1>Traveling in <span style="color: #f87932;">Cyprus</span></h1>
         <button class="orng-btn">BOOK A TRIP <span class="in-btn"></span></button>
       </div>
-      <div class="col-6 rombs">
+      <div class="col-12 col-md-6 rombs">
         <div class="romb">
           <div id="carouselExampleSlidesOnly" class="carousel slide romb-inner" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -107,9 +112,9 @@
   </section>
 
   <section class="adventure" id="adventure">
-    <div class="container d-flex">
+    <div class="container d-flex flex-column flex-md-row">
       <div class="route-img"></div>
-      <div class="col-6">
+      <div class="col-12 col-md-6 route-text">
         <div class="text">
           <h5>RELAX AND ENJOY</h5>
           <h2>Unforgettable Adventure</h2>
@@ -118,11 +123,15 @@
             passionate about revealing Cyprus hidden gems, from Istanbul's vibrant bazaars to the tranquil Cyprus
             coast.
           </p>
+          <img class="adv-mob-romb-1 d-block d-md-none" src="./assets/imgs/adventure-romb-mobile-1.png" alt="">
+          <img class="adv-mob-romb-2 d-block d-md-none" src="./assets/imgs/adventure-romb-mobile-2.png" alt="">
+          <button class="trn-btn d-none d-md-block">BOOK A TRIP<span class="in-btn-2"></span></button>
         </div>
-        <button class="trn-btn">BOOK A TRIP<span class="in-btn-2"></span></button>
+        
       </div>
+      <button class="trn-btn d-block d-md-none">BOOK A TRIP<span class="in-btn-2"></span></button>
 
-      <div class="col-6">
+      <div class="col-12 col-md-6 d-none d-md-block">
         <img class="two-rombs" src="./assets/imgs/Images.png" alt="">
       </div>
     </div>
@@ -134,14 +143,15 @@
     <div class="container d-flex flex-column justify-content-center align-items-center">
       <h2 class="text-center">Enough for your city life.<br>It is time to travel</h2>
       <p>The most beautiful unforgettable nature</p>
-      <div class="play-btn">
+      <div class="play-btn d-none d-md-block">
         <img src="./assets/imgs/Button Play.svg" alt="">
       </div>
       <div class="rombs-2 d-flex justify-content-center">
-        <img class="romb-2" src="./assets/imgs/romb-b1.svg" alt="">
-        <img class="romb-2" src="./assets/imgs/romb-b2.svg" alt="">
-        <img class="romb-2" src="./assets/imgs/romb-b3.svg" alt="">
-        <img class="romb-2" src="./assets/imgs/romb-b4.svg" alt="">
+        <img class="romb-2 d-none d-md-block romb-21" src="./assets/imgs/romb-b1.svg" alt="">
+        <img class="romb-2 d-none d-md-block romb-22" src="./assets/imgs/romb-b2.svg" alt="">
+        <img class="romb-2 d-none d-md-block romb-23" src="./assets/imgs/romb-b3.svg" alt="">
+        <img class="romb-2 d-none d-md-block romb-24" src="./assets/imgs/romb-b4.svg" alt="">
+        <img class="advantages-mobile d-block d-md-none" src="./assets/imgs/advantages-mobile.svg" alt="">
       </div>
     </div>
 
@@ -152,7 +162,7 @@
       <h3 class="mb-2">Blog about our travels</h3>
       <h4>The most vivid imressions</h4>
       <img class="my-3" src="./assets/imgs/cubs.svg" alt="">
-      <p>Photos, videos, articles, and reviews from our clients</p>
+      <p class="text-center">Photos, videos, articles, and reviews from our clients</p>
       <div class="photo-grid">
         <div class="img img-1">
           <div class="gradient-hov-img">
@@ -197,7 +207,7 @@
 
   <section class="trip">
     <div class="container d-flex justify-content-center align-items-center flex-column">
-      <h2>Tourist roadmap</h2>
+      <h2 class="text-center">Tourist roadmap</h2>
       <img src="./assets/imgs/cubs2.svg" alt="">
       <p class="text-center">Welcome to the Cyprus Roadmap, your ultimate guide to exploring the rich heritage, stunning
         landscapes, and
@@ -221,7 +231,7 @@
             <div class="block-grid">
               <h3 class="num">02</h3>
               <h5 class="month">June</h5>
-              <h4 class="text-block">Historical landmarks</h4>
+              <h4 class="text-block">Natural Wonders</h4>
             </div>
           </div>
 
@@ -229,7 +239,7 @@
             <div class="block-grid">
               <h3 class="num">03</h3>
               <h5 class="month">June</h5>
-              <h4 class="text-block">Historical landmarks</h4>
+              <h4 class="text-block">Cultural Experiences</h4>
             </div>
           </div>
 
@@ -237,7 +247,7 @@
             <div class="block-grid">
               <h3 class="num">04</h3>
               <h5 class="month">June</h5>
-              <h4 class="text-block">Historical landmarks</h4>
+              <h4 class="text-block">Modern Attractions</h4>
             </div>
           </div>
 
@@ -245,7 +255,7 @@
             <div class="block-grid">
               <h3 class="num">05</h3>
               <h5 class="month">June</h5>
-              <h4 class="text-block">Historical landmarks</h4>
+              <h4 class="text-block">Practical Information</h4>
             </div>
           </div>
 
@@ -253,7 +263,7 @@
             <div class="block-grid">
               <h3 class="num">06</h3>
               <h5 class="month">June</h5>
-              <h4 class="text-block">Historical landmarks</h4>
+              <h4 class="text-block">Layers of History</h4>
             </div>
           </div>
 
@@ -261,7 +271,7 @@
             <div class="block-grid">
               <h3 class="num">07</h3>
               <h5 class="month">June</h5>
-              <h4 class="text-block">Historical landmarks</h4>
+              <h4 class="text-block">Wander medieval</h4>
             </div>
           </div>
         </div>

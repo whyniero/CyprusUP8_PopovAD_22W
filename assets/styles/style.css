@@ -9,6 +9,10 @@ body {
     overflow-x: hidden;
 }
 
+section {
+    overflow-x: hidden;
+}
+
 .logo-img {
     scale: 1.3;
 }
@@ -40,7 +44,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
 }
 
 h3 {
@@ -536,6 +540,27 @@ h3 {
     margin-top: 50px;
 }
 
+.feedback{
+    background-image: url(../imgs/bg-feedback.jpg);
+    background-size: cover;
+    margin-top: 100px;
+    padding: 4%;
+}
+
+.feedback .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 10%;
+    border: solid 5px white;
+
+}
+
+footer {
+    background-color: #151C21;
+}
+
 @media (max-width: 1400px) {
     .romb {
         width: 320px;
@@ -991,10 +1016,6 @@ h3 {
 @media (max-width: 400px) {
     :root {
         --wandh-img: 130px;
-    }
-
-    html {
-        font-size: 8px;
     }
 
     .enough {

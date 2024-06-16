@@ -47,7 +47,7 @@
           <div class="offcanvas-header">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="offcanvas-body">
+          <div class="offcanvas-body d-flex flex-column align-items-center">
             <ul class="navbar-nav justify-content-center flex-grow-1">
               <li class="nav-item">
                 <a class="nav-link link-btn link-btn-1" aria-current="page" href="#adventure">Presents</a>
@@ -61,12 +61,17 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-btn link-btn-3" href="#">Blog</a>
+                <a class="nav-link link-btn link-btn-3" href="#news">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-btn link-btn-4" href="#">Shedule</a>
+                <a class="nav-link link-btn link-btn-4" href="#trip">Shedule</a>
               </li>
             </ul>
+            <div class="socials justify-self-end d-block d-lg-none">
+              <img class="social mx-1" src="./assets/imgs/twitter.svg" alt="">
+              <img class="social mx-1" src="./assets/imgs/telegram.svg" alt="">
+              <img class="social mx-1" src="./assets/imgs/whatsapp.svg" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -139,7 +144,7 @@
   </section>
 
   <section class="enough" id="enough">
-    <img class="cutter" src="./assets/imgs/obrezka.svg" alt="">
+    <img class="cutter d-none d-md-block" src="./assets/imgs/obrezka.svg" alt="">
     <div class="container d-flex flex-column justify-content-center align-items-center">
       <h2 class="text-center">Enough for your city life.<br>It is time to travel</h2>
       <p>The most beautiful unforgettable nature</p>
@@ -157,7 +162,7 @@
 
   </section>
 
-  <section class="news">
+  <section class="news" id="news">
     <div class="container d-flex flex-column justify-content-center align-items-center">
       <h3 class="mb-2">Blog about our travels</h3>
       <h4>The most vivid imressions</h4>
@@ -205,7 +210,7 @@
     </div>
   </section>
 
-  <section class="trip">
+  <section class="trip" id="trip">
     <div class="container d-flex justify-content-center align-items-center flex-column">
       <h2 class="text-center">Tourist roadmap</h2>
       <img src="./assets/imgs/cubs2.svg" alt="">
@@ -282,7 +287,7 @@
 
   <section class="feedback">
     <div class="container">
-      <h2>Join new Journey</h2>
+      <h2 class="text-center">Join new Journey</h2>
       <img src="./assets/imgs/cubs2.svg" alt="">
       <p class="text-white">Call to us register your trip</p>
       <div class="form">
@@ -336,24 +341,34 @@
 
   <footer>
     <div class="container d-flex flex-column justify-content-center">
-      <div class="row">
-        <img src="" alt="">
-        <div class="col">
-          <h6 class="h6-footter-1">Call center</h6>
-          <p class="p-footer-1">+7 800 555 35 35</p>
+      <div class="row row-cols-2 row-cols-md-4 line">
+        <div class="col-6 col-md-3 g-4">
+          <img src="./assets/imgs/footer-logo-mobile.svg" alt="">
         </div>
-        <div class="col">
-          <h6 class="h6-footter-1">Email</h6>
-          <p class="p-footer-1">support@yourmail.com</p>
-        </div>
-        <div class="col">
-          <h6 class="h6-footter-1">Office</h6>
-          <p class="p-footer-1">123 Eleftherias Avenue<br>Apt. 5B Paphos<br>8010 Cyprus</p>
+        <div
+          class="col d-flex flex-column flex-md-row align-items-start align-items-sm-center align-items-md-start g-4">
+          <div class="col-7 col-md-12">
+            <h6 class="h6-footer-1">Call center</h6>
+            <p class="p-footer-1">+7 800 555 35 35</p>
+          </div>
+          <div class="col-7 col-md-12">
+            <h6 class="h6-footer-1">Email</h6>
+            <p class="p-footer-1">support@yourmail.com</p>
+          </div>
+          <div class="col-7 col-md-12">
+            <h6 class="h6-footer-1">Office</h6>
+            <p class="p-footer-1">123 Eleftherias Avenue<br>Apt. 5B Paphos<br>8010 Cyprus</p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <h6 class="h6-footer-2">Copyright 2024. All rights reserved.</h6>
-        <p class="p-footer-2">Privacy Terms and condition</p>
+      <div class="row d-flex mt-5">
+        <h6 class="h6-footer-2 text-center">Copyright © 2024. All rights reserved.</h6>
+        <p class="p-footer-2 text-center">Privacy | Terms and condition</p>
+        <div class="socials d-flex justify-content-center">
+          <img class="social mx-1" src="./assets/imgs/twitter.svg" alt="">
+          <img class="social mx-1" src="./assets/imgs/telegram.svg" alt="">
+          <img class="social mx-1" src="./assets/imgs/whatsapp.svg" alt="">
+        </div>
       </div>
     </div>
 
